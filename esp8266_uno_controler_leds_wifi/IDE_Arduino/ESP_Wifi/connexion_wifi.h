@@ -16,6 +16,11 @@ void affichage_wifi()
   {
     Serial.println("Configuration STA Impossible");
   }
+
+  //if(WiFi.hostname()=="ESP_332148")
+  //{
+  //  WiFi.config(local_IP, gateway, subnet);
+  //}
   
   // Connectez-vous au réseau Wi-Fi avec SSID et mot de passe
   Serial.print("Connexion à ");
@@ -26,14 +31,26 @@ void affichage_wifi()
     delay(300);
     Serial.print(".");
   }
+  Serial.println("");
+  Serial.print("Masque : ");
+  Serial.print((WiFi.subnetMask().toString().c_str()));
+  Serial.println("");  
+  Serial.print("Passerelle : ");
+  Serial.print((WiFi.gatewayIP().toString().c_str()));   
+  Serial.println("");   
+  Serial.print("Nom Hote : ");
+  Serial.print((WiFi.hostname()));
+  Serial.println("");
+  // Afficher l'adresse ESP MAC
+  Serial.println("Adresse MAC : ");
+  Serial.println(WiFi.macAddress());
   // Afficher l'adresse IP locale et démarrer le serveur Web
   Serial.println("");
   Serial.println("WiFi connecté.");
   Serial.println("Adresse IP : ");
+  Serial.print("http://");  
   Serial.println(WiFi.localIP());
   server.begin(); 
 
-  // Afficher l'adresse ESP MAC
-  Serial.println("Adresse MAC : ");
-  Serial.println(WiFi.macAddress());
+
 }
