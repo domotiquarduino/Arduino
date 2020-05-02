@@ -1,4 +1,3 @@
-
 // ESP32/ESP8266 Wifi page Web allumer Led
 
 //Charge la bibliothèque WiFi
@@ -357,7 +356,8 @@ void loop()
             //client.println("<tr><td colspan=4><img src=\"https://zupimages.net/up/20/15/qktx.png\"></td></tr>");   //SCHEMA ESP8266 NodeMcu Dev Kit et Arduino UNO  
             //client.println("<tr><td colspan=4><img src=\"https://zupimages.net/up/20/16/fpnu.png\"></td></tr>");   //SCHEMA DT-06 ESP8285 et Arduino NANO 
             //client.println("<tr><td colspan=4><img src=\"https://zupimages.net/up/20/17/ui7m.png\"></td></tr>");   //SCHEMA ESP01 et Arduino NANO 
-            client.println("<tr><td colspan=4><img src=\"https://zupimages.net/up/20/16/albf.png\"></td></tr>");   //SCHEMA DT-06 ESP8285 et Arduino UNO           
+            //client.println("<tr><td colspan=4><img src=\"https://zupimages.net/up/20/16/albf.png\"></td></tr>");   //SCHEMA DT-06 ESP8285 et Arduino UNO  
+            client.println("<tr><td colspan=4><img src=\"https://zupimages.net/up/20/18/bhe2.png\"></td></tr>");   //SCHEMA ESP01 et Arduino UNO         
             client.println("</table>");
             client.println("</body></html>");
             
